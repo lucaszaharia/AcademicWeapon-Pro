@@ -1,36 +1,3 @@
-//MAYBE (Tier 2) add haptic feedback to more buttons
-
-// make assignment text space larger so it doesn't take up 3 lines
-
-//MAYBE make it a flatlist so that it doesn't get slow
-
-//MAYBE (Tier 2) make sure ppl can't break the app by inputting letters instead of numbers or smth or wrong inputs like that
-
-//grade calculations    (DONE)
-
-// align grade calcs    (DONE)
-
-// align date correctly (DONE)
-
-//MAYBE (Tier 2) have the scrollwheel start at the first unfinished assignment
-
-// edit assignment details (change date, weight, name, things like that)
-
-// MAYBE (Tier 3) edit course
-
-// shorten long press time and fade times
-
-//MAYBE (Tier 2) add colour to the course grade seciton so you know what colour is hich course
-
-// MAYBE (Tier 1) skip reading week/midterm week  (add another week to course if it is during week in the loop thing)
-
-//MAYBE (Tier 3) delusion mode (see wht grades you need to get what mark) or (put assumptions for future grades to get final grade assumptions)
-// Maybe part of delusion mode is all your marks so far  - ie list of everything and what you've gotten
-// or maybe have a switch that changes main page from displaying total assignment weight to what you've gotten on it
-
-//MAYBE Info page for how t odo everything
-
-
 import { Text, View, StyleSheet, Image, Button, Modal, TextInput, Animated, Pressable, StatusBar, ScrollView, FlatList, TouchableOpacity } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -1488,3 +1455,24 @@ const App = () => {
 }
 
 export default App;*/
+
+
+/*
+
+Things to add:
+
+1. Info/help page explaining how to use the app would be a good idea
+1. Restrict user input to either text or number or whatever is warranted  
+2. Include a feature that allows you to select when reading week is and have reccuring assignments skip that week if applicable
+2. Haptic feedback to more buttons
+3. Increase assignment name text space
+4. Try making the list a flatlist to increase speed
+5. Have the list auto-start at the first unfinished assignment so you don't have to scroll to wherever you are in the course
+6. Add something in the course name section indicating which colour represents which course
+7. Maybe shorten fade duration
+8. Allow users to edit course details (colour, assignments, whether its a credit/no-credit course)
+9. For version 1.1 - include a screen that functions as a grade predictor - based on your current grades and expected grades, what your final grade will be, or what you need to get on a certain exam/assignment to pass the course
+10. As part of the above screen, include something allowing you to see all marks received throughout the course
+11. Maybe add switch in the main page allowing you to change view from assignemnt weight to assignment mark arned
+
+*/
